@@ -17,6 +17,8 @@ resource "azurerm_traffic_manager_profile" "main" {
     timeout_in_seconds           = var.monitor_probe_timeout
     tolerated_number_of_failures = var.monitor_tolerated_failures
   }
+
+  tags = var.tags
 }
 
 resource "azurerm_traffic_manager_endpoint" "main" {

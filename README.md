@@ -13,7 +13,7 @@ module "traffic_manager" {
   profile_name           = "trafficmanager"
   traffic_routing_method = "MultiValue"
   max_return             = 3
-  monitor_port           = 6379
+  monitor_port           = 6001
   traffic_manager_endpoints = {
     user1_vmss_0 = {
       target_ip = "1.1.1.1"

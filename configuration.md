@@ -9,7 +9,7 @@
 
 | Name | Version |
 |------|---------|
-| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | 2.76.0 |
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | ~> 2.46 |
 
 ## Modules
 
@@ -36,6 +36,7 @@ No modules.
 | <a name="input_monitor_tolerated_failures"></a> [monitor\_tolerated\_failures](#input\_monitor\_tolerated\_failures) | n/a | `number` | `3` | no |
 | <a name="input_profile_name"></a> [profile\_name](#input\_profile\_name) | n/a | `string` | n/a | yes |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | n/a | `string` | n/a | yes |
+| <a name="input_tags"></a> [tags](#input\_tags) | Any tags can be set | `map(string)` | `{}` | no |
 | <a name="input_traffic_manager_endpoints"></a> [traffic\_manager\_endpoints](#input\_traffic\_manager\_endpoints) | n/a | <pre>map(object({<br>    target_ip = string<br>    weight    = number<br>  }))</pre> | `{}` | no |
 | <a name="input_traffic_routing_method"></a> [traffic\_routing\_method](#input\_traffic\_routing\_method) | Specifies the algorithm used to route traffic, possible values are: Geographic, MultiValue, Performance, Priority, Subnet, Weighted | `string` | n/a | yes |
 

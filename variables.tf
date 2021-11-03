@@ -58,3 +58,9 @@ variable "traffic_manager_endpoints" {
   }))
   default = {}
 }
+
+variable "tags" {
+  type        = map(string)
+  description = "Any tags can be set"
+  default     = {}
+}
